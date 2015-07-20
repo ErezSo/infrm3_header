@@ -249,6 +249,7 @@ header.main .clock {
 
 /* line 151, ../sass/_layout.scss */
 .horizontal-list > li > .submenu {
+  display: none;
   position: absolute;
   top: 43px;
   left: 0;
