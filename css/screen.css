@@ -104,17 +104,29 @@ h1 {
 }
 
 /* line 16, ../sass/_layout.scss */
-ol, ul {
+ul {
   list-style: none;
+  display: block;
 }
 
-/* line 20, ../sass/_layout.scss */
+/* line 21, ../sass/_layout.scss */
+nav {
+  display: block;
+}
+
+/* line 25, ../sass/_layout.scss */
+a {
+  text-decoration: none;
+  color: #00b2aD;
+}
+
+/* line 30, ../sass/_layout.scss */
 header.main {
   height: 80px;
   background-image: url("../img/headerBackground.gif");
   display: block;
 }
-/* line 25, ../sass/_layout.scss */
+/* line 35, ../sass/_layout.scss */
 header.main .clock {
   display: inline;
   float: left;
@@ -128,17 +140,17 @@ header.main .clock {
   background: #000;
 }
 
-/* line 39, ../sass/_layout.scss */
+/* line 49, ../sass/_layout.scss */
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 60px;
   margin-right: auto;
   height: 100%;
-  position: static;
+  position: relative;
 }
 
-/* line 48, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 .brand {
   width: 18.64407%;
   float: left;
@@ -146,28 +158,127 @@ header.main .clock {
   display: inline;
   height: 100%;
 }
-/* line 55, ../sass/_layout.scss */
+/* line 65, ../sass/_layout.scss */
 .brand h1 {
   text-indent: -99999px;
   background: url("../img/inform-logo.png") 1px 20px no-repeat;
   height: 50%;
 }
-/* line 61, ../sass/_layout.scss */
+/* line 71, ../sass/_layout.scss */
 .brand .date {
   display: block;
   color: #D9DbDe;
   margin: 5px 0 0 0;
 }
 
-/* line 68, ../sass/_layout.scss */
+/* line 78, ../sass/_layout.scss */
 .mainmenu {
   width: 52.54237%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 73, ../sass/_layout.scss */
+/* line 84, ../sass/_layout.scss */
 .mainmenu a {
   height: 40px;
   display: table-cell;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* line 92, ../sass/_layout.scss */
+.horizontal-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+}
+/* line 98, ../sass/_layout.scss */
+.horizontal-list li {
+  width: 22.58065%;
+  margin-right: -100%;
+  position: relative;
+  padding: 0;
+  display: table;
+  float: left;
+}
+
+/* line 108, ../sass/_layout.scss */
+.horizontal-list > li {
+  clear: none;
+}
+/* line 111, ../sass/_layout.scss */
+.horizontal-list > li:nth-child(4n+1) {
+  clear: left;
+  margin-left: 0%;
+  color: red;
+}
+/* line 117, ../sass/_layout.scss */
+.horizontal-list > li:nth-child(4n+2) {
+  margin-left: 25.80645%;
+}
+/* line 121, ../sass/_layout.scss */
+.horizontal-list > li:nth-child(4n+3) {
+  margin-left: 51.6129%;
+}
+/* line 125, ../sass/_layout.scss */
+.horizontal-list > li:nth-child(4n+4) {
+  margin-left: 77.41935%;
+}
+
+/* line 131, ../sass/_layout.scss */
+.horizontal-list > li > a {
+  display: table-cell;
+  height: 40px;
+  padding-bottom: 2px;
+  vertical-align: bottom;
+  position: relative;
+  color: #D9DbDe;
+  width: 100%;
+}
+/* line 140, ../sass/_layout.scss */
+.horizontal-list > li > a:before {
+  content: "";
+  width: 2px;
+  height: 80px;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  margin-left: -2px;
+}
+
+/* line 151, ../sass/_layout.scss */
+.horizontal-list > li > .submenu {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  background-color: #474949;
+  z-index: 1;
+  min-width: 113.49571%;
+}
+/* line 160, ../sass/_layout.scss */
+.horizontal-list > li > .submenu li {
+  display: block;
+  padding: 0;
+  float: none;
+}
+
+/* line 167, ../sass/_layout.scss */
+.login {
+  padding-left: 13.55932%;
+  width: 11.86441%;
+  float: right;
+  margin-right: 0;
+  display: inline;
+  text-align: right;
+  display: table;
+}
+/* line 176, ../sass/_layout.scss */
+.login a {
+  display: table-cell;
+  height: 40px;
+  vertical-align: bottom;
+  position: relative;
+  line-height: 18px;
+  color: #D9DbDe;
 }

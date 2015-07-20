@@ -13,8 +13,18 @@ h1 {
 	line-height: 36px;
 }
 
-ol, ul {
+ul {
 	list-style: none;
+	display: block;
+}
+
+nav {
+	display: block;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-cyan;
 }
 
 header.main {
@@ -42,7 +52,7 @@ header.main {
 	margin-left: 60px;
 	margin-right: auto;
 	height: 100%;
-	position: static;
+	position: relative;
 }
 
 .brand {
@@ -70,12 +80,108 @@ header.main {
 	float: left;
 	margin-right: 1.69492%;
 	display: inline;
+  
   a {
   	height: 40px;
   	display: table-cell;
+  	line-height: 18px;
+  	text-transform: uppercase;
   }
 }
 
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: visible;
+	
+	li {
+		width: 22.58065%;
+    margin-right: -100%;
+    position: relative;
+    padding: 0;
+    display: table;
+    float: left;
+	}
+}
+
+.horizontal-list > li {
+  clear: none;
+
+  &:nth-child(4n+1) {
+    clear: left;
+    margin-left: 0%;
+    color: red;
+  }
+  
+  &:nth-child(4n+2) {
+    margin-left: 25.80645%;
+  }
+  
+  &:nth-child(4n+3) {
+    margin-left: 51.6129%;
+  }
+  
+  &:nth-child(4n+4) {
+    margin-left: 77.41935%;
+  }
+
+}
+
+.horizontal-list > li > a {
+	display: table-cell;
+	height: 40px;
+	padding-bottom: 2px;
+	vertical-align: bottom;
+	position: relative;
+	color: $navi;
+	width: 100%;
+	
+	&:before {
+		content: "";
+    width: 2px;
+    height: 80px;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    margin-left: -2px;
+	}
+}
+
+.horizontal-list > li >.submenu {
+  // display: 	none;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  background-color: $background;
+  z-index: 1;
+  min-width: 113.49571%;
+
+  li {
+  	display: block;
+  	padding: 0;
+  	float: none;
+  }
+}
+
+.login {
+	padding-left: 13.55932%;
+	width: 11.86441%;
+	float: right;
+	margin-right: 0;
+	display: inline;
+	text-align: right;
+	display: table;
+
+	a {
+		display: table-cell;
+		height: 40px;
+		vertical-align: bottom;
+		position: relative;
+		line-height: 18px;
+    color: $navi;
+	}
+}
 
 
 
