@@ -224,15 +224,26 @@ header.main {
 	display: inline;
 	text-align: right;
 	display: table;
+}
 
-	a {
-		display: table-cell;
-		height: 40px;
-		vertical-align: bottom;
-		position: relative;
-		line-height: 18px;
-    color: $navi;
-	}
+.login a {
+	display: table-cell;
+	height: 40px;
+	vertical-align: bottom;
+	position: relative;
+	line-height: 18px;
+  color: $navi;
+  
+  &:hover {
+    color: $cyan;
+  }
+}
+
+.iconic.user:after {
+	content: 'u';
+	font-family: IconicStroke; 
+	margin-left: 5px;
+  display: inline;
 }
 
 
