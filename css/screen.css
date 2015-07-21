@@ -180,20 +180,19 @@ header.main .clock {
 }
 /* line 84, ../sass/_layout.scss */
 .mainmenu a {
-  height: 40px;
-  display: table-cell;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-/* line 92, ../sass/_layout.scss */
+/* line 91, ../sass/_layout.scss */
 .horizontal-list {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: visible;
 }
-/* line 98, ../sass/_layout.scss */
+/* line 97, ../sass/_layout.scss */
 .horizontal-list li {
   width: 22.58065%;
   margin-right: -100%;
@@ -203,9 +202,10 @@ header.main .clock {
   float: left;
 }
 
-/* line 108, ../sass/_layout.scss */
+/* line 107, ../sass/_layout.scss */
 .horizontal-list > li {
   clear: none;
+  margin-left: 0;
 }
 /* line 111, ../sass/_layout.scss */
 .horizontal-list > li:nth-child(4n+1) {
@@ -225,8 +225,21 @@ header.main .clock {
 .horizontal-list > li:nth-child(4n+4) {
   margin-left: 77.41935%;
 }
+/* line 130, ../sass/_layout.scss */
+.horizontal-list > li > a {
+  display: table-cell;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  position: relative;
+  color: #D9DbDe;
+  width: 100%;
+}
+/* line 138, ../sass/_layout.scss */
+.horizontal-list > li > a:hover {
+  border-bottom: 2px #00D3D8 solid;
+}
 
-/* line 131, ../sass/_layout.scss */
+/* line 144, ../sass/_layout.scss */
 .horizontal-list > li > a {
   display: table-cell;
   height: 40px;
@@ -236,7 +249,7 @@ header.main .clock {
   color: #D9DbDe;
   width: 100%;
 }
-/* line 140, ../sass/_layout.scss */
+/* line 153, ../sass/_layout.scss */
 .horizontal-list > li > a:before {
   content: "";
   width: 2px;
@@ -247,24 +260,58 @@ header.main .clock {
   margin-left: -2px;
 }
 
-/* line 151, ../sass/_layout.scss */
+/* line 164, ../sass/_layout.scss */
 .horizontal-list > li > .submenu {
   display: none;
   position: absolute;
   top: 43px;
   left: 0;
   background-color: #474949;
-  z-index: 1;
+  z-index: 1000;
   min-width: 113.49571%;
 }
-/* line 160, ../sass/_layout.scss */
+/* line 173, ../sass/_layout.scss */
 .horizontal-list > li > .submenu li {
   display: block;
   padding: 0;
   float: none;
+  width: 100%;
 }
 
-/* line 167, ../sass/_layout.scss */
+/* line 181, ../sass/_layout.scss */
+.mainmenu > .horizontal-list > li .submenu li:hover {
+  background: #00e1ff;
+}
+
+/* line 196, ../sass/_layout.scss */
+.mainmenu > .horizontal-list > li .submenu li.line {
+  margin: 11px 5px;
+  border-bottom: 1px #D9DbDe solid;
+  display: block;
+  height: 1px;
+  width: 94%;
+}
+/* line 203, ../sass/_layout.scss */
+.mainmenu > .horizontal-list > li .submenu li.line:hover {
+  background: none;
+}
+
+/* line 208, ../sass/_layout.scss */
+.submenu li a {
+  display: block;
+  text-transform: none;
+  color: #D9DbDe;
+  line-height: 22px;
+  width: 100%;
+  padding-top: 4px;
+  margin: 0 6px;
+}
+/* line 217, ../sass/_layout.scss */
+.submenu li a:hover {
+  color: #474949;
+}
+
+/* line 222, ../sass/_layout.scss */
 .login {
   padding-left: 13.55932%;
   width: 11.86441%;
@@ -274,7 +321,7 @@ header.main .clock {
   text-align: right;
   display: table;
 }
-/* line 176, ../sass/_layout.scss */
+/* line 231, ../sass/_layout.scss */
 .login a {
   display: table-cell;
   height: 40px;

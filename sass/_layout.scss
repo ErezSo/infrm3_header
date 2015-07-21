@@ -82,10 +82,9 @@ header.main {
 	display: inline;
   
   a {
-  	height: 40px;
-  	display: table-cell;
   	line-height: 18px;
   	text-transform: uppercase;
+  	text-decoration: none;
   }
 }
 
@@ -107,6 +106,7 @@ header.main {
 
 .horizontal-list > li {
   clear: none;
+  margin-left: 0;
 
   &:nth-child(4n+1) {
     clear: left;
@@ -126,6 +126,19 @@ header.main {
     margin-left: 77.41935%;
   }
 
+
+  &>a {
+  	display: table-cell;
+  	text-transform: uppercase;
+  	padding-bottom: 2px;
+  	position: relative;
+  	color: $navi;
+  	width: 100%;
+	  
+	  &:hover {
+	  	border-bottom: 2px $cyan solid;
+	  }
+  }
 }
 
 .horizontal-list > li > a {
@@ -154,13 +167,55 @@ header.main {
   top: 43px;
   left: 0;
   background-color: $background;
-  z-index: 1;
+  z-index: 1000;
   min-width: 113.49571%;
 
   li {
   	display: block;
   	padding: 0;
   	float: none;
+	  width: 100%;	
+  }
+}
+
+.mainmenu>.horizontal-list>li .submenu li:hover {
+  background: #00e1ff;
+}
+
+  // .mainmenu>.horizontal-list>li {
+  //   width: 22.58065%;
+  //   float: left;
+  //   margin-right: 3.22581%;
+  //   display: inline;
+  //   margin-right: -100%;
+  //   position: relative;
+  //   padding: 0;
+  //   display: table;
+  // }
+
+.mainmenu>.horizontal-list>li .submenu li.line {
+	margin: 11px 5px;
+	border-bottom: 1px $navi solid;
+	display: block;
+	height: 1px;
+	width: 94%;
+
+	&:hover {
+		background: none;
+	}
+}
+
+.submenu li a {
+	display: block;
+	text-transform: none;
+	color: $navi;
+	line-height: 22px;
+	width: 100%;
+  padding-top: 4px;
+  margin: 0 6px;
+
+  &:hover {
+	  color: $background;
   }
 }
 
