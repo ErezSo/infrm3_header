@@ -96,17 +96,16 @@ header.main {
 	
 	li {
 		width: 22.58065%;
+    float: left;
     margin-right: -100%;
     position: relative;
     padding: 0;
+	  margin-left: 0;
     display: table;
-    float: left;
 	}
 }
 
 .horizontal-list > li {
-  clear: none;
-  margin-left: 0;
 
   &:nth-child(4n+1) {
     clear: left;
@@ -116,16 +115,18 @@ header.main {
   
   &:nth-child(4n+2) {
     margin-left: 25.80645%;
+	  clear: none;
   }
   
   &:nth-child(4n+3) {
     margin-left: 51.6129%;
+	  clear: none;
   }
   
   &:nth-child(4n+4) {
     margin-left: 77.41935%;
+	  clear: none;
   }
-
 
   &>a {
   	display: table-cell;
@@ -135,10 +136,17 @@ header.main {
   	color: $navi;
   	width: 100%;
 	  
-	  &:hover {
-	  	border-bottom: 2px $cyan solid;
-	  }
   }
+	&:hover>a:after {
+		content: '';
+    display: block;
+    background: $cyan;
+    width: 114.28571%;
+    height: 4px;
+    position: relative;
+    top: 3px;
+    margin: -4px 0 0 0;
+	}
 }
 
 .horizontal-list > li > a {
@@ -179,19 +187,8 @@ header.main {
 }
 
 .mainmenu>.horizontal-list>li .submenu li:hover {
-  background: #00e1ff;
+  background: $cyan;
 }
-
-  // .mainmenu>.horizontal-list>li {
-  //   width: 22.58065%;
-  //   float: left;
-  //   margin-right: 3.22581%;
-  //   display: inline;
-  //   margin-right: -100%;
-  //   position: relative;
-  //   padding: 0;
-  //   display: table;
-  // }
 
 .mainmenu>.horizontal-list>li .submenu li.line {
 	margin: 11px 5px;
